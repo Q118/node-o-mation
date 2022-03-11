@@ -1,0 +1,28 @@
+{
+    "name": "automating-nodejs-npm-scripts",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "config": {
+        "port": "5000"
+    },
+    "scripts": {
+        "tsc": "tsc",
+        "prestart": "echo The prestart script is running && npm run tsc",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node index.js"
+    },
+    "keywords": [],
+    "author": "Shelby Rothman",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.17.3"
+    },
+    "devDependencies": {
+        "@types/express": "^4.17.2",
+        "@types/node": "^12.12.7",
+        "cross-env": "^7.0.3",
+        "tslint": "^5.20.1",
+        "typescript": "^3.7.2"
+    }
+}
